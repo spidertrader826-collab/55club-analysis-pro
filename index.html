@@ -1,4 +1,5 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -46,9 +47,13 @@ body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sa
     <div class="timer" id="countdown">Next Round in 60s</div>
     <a class="cta" href="https://55clublive.site/#/register?invitationCode=838761740800">REGISTER NOW</a>
     <a class="cta" style="background:linear-gradient(135deg,#0099ff,#00eaff)" href="https://t.me/+Q9-gc6xRyxwyYzBl">JOIN TELEGRAM</a>
-  </div>  <div class="grid">
+  </div>
+
+  <div class="grid">
     <div class="pill">⚡ Fast</div><div class="pill">📱 Mobile</div><div class="pill">🔒 Secure</div>
-  </div>  <div class="card">
+  </div>
+
+  <div class="card">
     <div class="label">AI • Period Number</div>
     <input id="period" class="input" placeholder="Enter 3-digit period" maxlength="3" />
     <button id="run" class="btn">AI Generate Result</button>
@@ -57,14 +62,20 @@ body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sa
     <div id="conftext" class="conftext">AI Confidence</div>
     <div id="trend" class="trend">TREND: —</div>
     <div class="icons">⚡ 🤖 🔮</div>
-  </div>  <div class="footer">Educational AI interface • No guarantees • 18+</div>
-</div><div id="ageGate" class="overlay">
+  </div>
+
+  <div class="footer">Educational AI interface • No guarantees • 18+</div>
+</div>
+
+<div id="ageGate" class="overlay">
   <div class="modal">
     <div style="font-size:22px;font-weight:900;margin-bottom:8px">18+ Access Only</div>
     <div style="opacity:.85;font-size:14px">Educational UI simulation only.</div>
     <button id="ageYes" class="btn" style="margin-top:14px">I am 18+</button>
   </div>
-</div><script>
+</div>
+
+<script>
 // age gate
 const gate=document.getElementById('ageGate');document.getElementById('ageYes').onclick=()=>gate.style.display='none';
 
@@ -102,5 +113,6 @@ document.getElementById('run').onclick=()=>{
   out.innerHTML=lastR;beep(isBig?1000:500);
  },5000);
 };
-</script></body>
+</script>
+</body>
 </html>
